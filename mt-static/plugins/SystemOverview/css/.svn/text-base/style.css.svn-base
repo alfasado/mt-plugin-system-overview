@@ -1,8 +1,0 @@
-h2#page-title{font-weight:bold; font-size:14px !important; margin-bottom:-2px !important;}
-.msg { margin-top:16px; margin-bottom:0px;}
-
-h2.blog_tree-blog_name { margin-bottom:-3px !important; margin-top:-2px !important; }
-li.blog_tree-tree_folder span { margin-bottom:-1px !important; }
-li.blog_tree-tree_category  span { margin-bottom:-1px !important; }
-
-div#blog_tree { padding-bottom:12px !important; }
