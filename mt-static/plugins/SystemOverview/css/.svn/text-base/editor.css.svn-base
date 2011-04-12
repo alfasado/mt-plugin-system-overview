@@ -1,0 +1,143 @@
+.editor {
+	border-top: 1px solid #CCC;
+}
+
+#toolbar_box {
+	border-top: 1px solid #C8C2BE;
+	border-bottom: 1px solid #C8C2BE;
+	position: fixed;
+	top: 64px;
+	left: 0px;
+	right: 0px;
+/*		z-index: 00;
+*/	padding: 3px 0px;
+	background-color: #F0F0EE;
+	z-index: 810;
+}
+
+* html #toolbar_box {
+	position: absolute;
+	padding-right: 0;
+	padding-left: 0;
+	width: 100%;
+}
+
+#toolbar_box .reset_button {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	z-index: 820;
+}
+
+#toolbar_box #toolbar_mask {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: #F0F0EE;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	width: 100%;
+	height: 100%;
+}
+
+#toolbar_box #editor-content-toolbar {
+	border: none;
+	-moz-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	padding: 0px 0px 0px 6px;
+	background-color: #F0F0EE;
+	
+}
+
+#toolbar_box #editor-content-toolbar .field-buttons-formatting span {
+	border-right: 1px solid #F0F0EE;
+}
+
+#toolbar_box #editor-content-toolbar .field-buttons-formatting span a.button {
+	margin: 2px 0px;
+	vertical-align: bottom;
+}
+
+#toolbar_box #editor-content-toolbar .edit-mode {
+	display: none;
+}
+
+#toolbar_box .mceEditor {
+	position:relative;
+	display: none;
+}
+
+#toolbar_box .mceExternalToolbar {
+	position: relative !important;
+	border: none !important;
+	top: 0px !important;
+	zoom: 1;
+}
+
+#toolbar_box .mceExternalClose {
+	display: none;
+}
+
+#toolbar_box .mceListBoxMenu {
+	zoom: 1;
+}
+
+#toolbar_box .mceListBoxMenu .mceListBoxMenu {
+	
+}
+
+#toolbar_box .mceListBoxMenu .mceMenu {
+	position: relative !important;
+}
+
+html>/**/body#edit-entry #toolbar_box .mceListBox .mceText,
+html>/**/body#edit-entry .mceListBox .mceText,
+html>/**/body#edit-entry .mceMenu span.mceText,
+html>/**/body#edit-entry .mceMenu .mcePreview {
+	font-family /*\**/: "ＭＳ Ｐゴシック",sans-serif\9;
+}
+
+.editor_hide {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: -5px;
+	overflow: hidden;
+}
+
+#tiny-formatted .field {
+	margin-top: 0px;
+}
+
+.mceLayout {
+	width: 100% !important;
+}
+
+
+#toolbar_iframe {
+	display: block;
+	background-color: #FFF;
+	border: none;
+	margin: 0px;
+	position: fixed;
+	top: 64px;
+	left: 0px;
+	right: 0px;
+	z-index: 803;
+	width: 100%;
+}
+
+* html #toolbar_iframe {
+	position: absolute;
+}
+
+
+* html .editor-sub,
+* html .ext-field-content-inner  {
+	width: 100%;
+	overflow: hidden;
+}

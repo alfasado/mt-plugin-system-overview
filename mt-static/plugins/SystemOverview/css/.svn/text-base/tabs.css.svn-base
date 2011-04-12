@@ -1,0 +1,267 @@
+@media print { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */ 
+    .ui-tabs-hide {
+        display: none;
+    }
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+ 
+/**
+ * ==============================================
+ * OVERWRITE MT BASE CSS 
+ * ==============================================
+ */
+	 
+.main-screen #container 
+{
+/*	position: relative;*/
+	padding-left: 43px;
+	max-width: 100%;
+	min-width: 1px;
+}
+ 
+.has-menu-nav .main-screen #content 
+{
+	margin-left: 0;
+}
+ 
+.has-menu-nav .main-screen #content-header, 
+.has-menu-nav .main-screen #content-body
+{
+	margin-left: 0;
+}
+ 
+#content-header 
+{
+	padding-right: 0;
+}
+ 
+.has-menu-nav #menu 
+{
+	position: absolute;
+}
+ 
+#selector-nav .selector 
+{
+	position: absolute;
+}
+ 
+#footer .inline-nav 
+{
+	white-space: normal !important;
+}
+  
+/**
+ * ==============================================
+ * .tabs 
+ * ==============================================
+ */
+	 
+#menu_tabs 
+{
+	padding-top: 20px;
+	width: 25px;
+	position: fixed;
+	left: -1px;
+}
+	 
+#menu_tabs li 
+{
+	width: 23px;
+	height: 103px;
+}
+ 
+#menu_tabs a 
+{
+	display: block;
+	width: 23px;
+	height: 98px;
+	overflow: hidden;
+	background-image: url(../images/tab.gif);
+	background-repeat: no-repeat;
+	text-indent: -1000em;
+	outline: none;
+}
+	
+#menu_tabs .trigger_menu a 
+{
+	background-position: 0 -200px;
+}
+	 
+#menu_tabs .trigger_menu a.current 
+{
+	background-position: -25px -200px;
+}
+  
+#menu_tabs .trigger_page a 
+{
+	background-position: 0 0px;
+}
+	 
+#menu_tabs .trigger_page a.current 
+{
+	background-position: -25px 0px;
+}
+  
+#menu_tabs .trigger_item a 
+{
+	background-position: 0 -100px;
+}
+	 
+#menu_tabs .trigger_item a.current 
+{
+	background-position: -25px -100px;
+}
+     
+/**
+ * ==============================================
+ * #menu 
+ * ==============================================
+ */
+	 
+.has-menu-nav #menu 
+{
+	position: fixed;
+	/*
+	left: -250px;
+	width: 249px;
+	*/
+	border: none;
+	border-top: 1px solid #C8C2BE;
+	border-right: 1px solid #C8C2BE;
+	background-color: #f3f3f3;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+}
+
+/*\*/
+* html .has-menu-nav #menu  {
+	border-bottom: 1px solid #C8C2BE;
+}
+/**/
+	 
+.has-menu-nav #menu .menu-nav 
+{
+	margin: 10px;
+}
+ 
+.has-menu-nav #menu #tab_item #main-table, 
+.has-menu-nav #menu #tab_page #main-table
+{
+	width: 100%;
+}
+ 
+.has-menu-nav #menu #tab_item 
+{
+/*
+	overflow: auto;
+*/
+}
+ 
+.has-menu-nav #menu #tab_page .iframe_box 
+{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+  
+#tab_menu 
+{
+	overflow: auto;
+}
+ 
+#indicate 
+{
+	display: none;
+	padding: 20px 0 30px;
+	text-align: center;
+}
+  
+/**
+ * ==============================================
+ * HACK for IE6 
+ * ==============================================
+ */
+	 
+*+html #menu #tab_menu * 
+{
+	position: static;
+}
+	 
+*+html #menu #tab_menu .toggle-menu 
+{
+	overflow: hidden;
+	_zoom: 1;
+}
+	 
+*+html #menu #tab_menu .toggle-menu .top-menu-link 
+{
+	float: left;
+	width: 100%;
+	margin-right: -20px;
+}
+ 
+*+html #menu #tab_menu .toggle-menu .toggle-button 
+{
+	float: right;
+	padding-top: 10px;
+	width: 19px;
+	height: 18px;
+}
+ 	  
+* html #menu #tab_menu * 
+{
+	position: static;
+}
+	 
+* html #menu #tab_menu .toggle-menu 
+{
+	overflow: hidden;
+	_zoom: 1;
+}
+	 
+* html #menu #tab_menu .toggle-menu .top-menu-link 
+{
+	float: left;
+	width: 100%;
+	margin-right: -20px;
+}
+ 
+* html #menu #tab_menu .toggle-menu .toggle-button 
+{
+	float: right;
+	padding-top: 10px;
+	width: 19px;
+	height: 18px;
+}
+   
+* html #menu_tabs 
+{
+	position: absolute;
+}
+ 
+* html .has-menu-nav #menu 
+{
+	position: absolute;
+/*	top: 84px;*/
+}
+ 
+* html #menu_separator 
+{
+	height: 100%;
+}
+ 
+* html .actions-bar * 
+{
+	z-index: -1;
+}
+  
+#menu_separator 
+{
+	height: 10px;
+}
+
+* html #indicate
+{
+	display: none !important;
+}

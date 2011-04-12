@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteRule ^([^?]+\.(css|js))$ /MTOS504/mt-static/minify_2/min/f=MTOS504/mt-static/$1 [NC,L]
+</IfModule>

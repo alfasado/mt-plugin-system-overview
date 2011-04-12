@@ -1,0 +1,11 @@
+name: System Overview
+id:   SystemOverview
+key:  systemoverview
+version: 0.1
+author_link: https://alfasado.net/
+author_name: Alfasado Inc.
+l10n_class: SystemOverview::L10N
+description: <__trans phrase="Add System Overview to header.">
+callbacks:
+    MT::App::CMS::template_source.header: $systemoverview::SystemOverview::Plugin::_header_source
+
