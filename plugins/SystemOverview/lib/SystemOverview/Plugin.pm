@@ -11,7 +11,7 @@ sub _header_source {
     my $insert = '';
     if ( $perms->can_view_log ) {
         $insert .= <<'MTML';
-        <li><a href="<$mt:var name="mt_url"$>?__mode=view_log" title="<__trans phrase="View Activity Log">"><__trans phrase="View Activity Log"></a></li>
+        <li><a href="<$mt:var name="mt_url"$>?__mode=list&amp;_type=log" title="<__trans phrase="View Activity Log">"><__trans phrase="View Activity Log"></a></li>
 MTML
     }
     if ( $perms->can_manage_plugins ) {
@@ -54,9 +54,13 @@ MTML
         <script type="text/javascript" src="<$mt:var name="static_uri"$>plugins/SystemOverview/js/menu.js?v=<mt:var name="mt_version_id" escape="URL">"></script>
 MTML
         $$tmpl =~ s/($pointer)/$insert_head$insert$insert_footer$1/si;
+        my $css = 'style_51.css';
+        if ( MT->version_id =~ /^5\.0/ ) {
+            $css = 'style.css';
+        }
         $pointer = quotemeta( '<mt:var name="html_head">' );
-        $insert = <<'MTML';
-        <link rel="stylesheet" href="<$mt:var name="static_uri"$>plugins/SystemOverview/css/style.css?v=<mt:var name="mt_version_id" escape="url">" type="text/css" />
+        $insert = <<MTML;
+        <link rel="stylesheet" href="<\$mt:var name="static_uri"\$>plugins/SystemOverview/css/$css?v=<mt:var name="mt_version_id" escape="url">" type="text/css" />
 MTML
         $$tmpl =~ s/($pointer)/$insert$1/si;
     }
