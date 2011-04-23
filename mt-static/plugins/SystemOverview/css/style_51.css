@@ -8,9 +8,10 @@
 
 #utility-nav .extended_menu .extended_system_menu
 {
-    height: 28px;
-    line-height: 28px;
-    padding: 11px 17px 10px 5px;
+    height: 26px;
+    line-height: 17px;
+    padding: 9px 20px 11px 5px;
+    margin-right:9px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     -webkit-border-top-left-radius: 5px;
@@ -37,7 +38,7 @@
 {
     display: none;
     position: absolute;
-    top: 21px;
+    top: 24px;
     left: 0;
     width: 140px;
     z-index: 1000;
