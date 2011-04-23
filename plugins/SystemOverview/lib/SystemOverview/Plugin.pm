@@ -26,7 +26,7 @@ MTML
     }
     if ( $user->is_superuser ) {
         $insert .= <<'MTML';
-        <li><a href="<$mt:var name="mt_url"$>?__mode=list&amp;_type=author" title="<__trans phrase="Manage Users">"><__trans phrase="Manage Users"></a></li>
+        <li><a href="<$mt:var name="mt_url"$>?__mode=list&amp;_type=author&amp;blog_id=0" title="<__trans phrase="Manage Users">"><__trans phrase="Manage Users"></a></li>
         <li><a href="<$mt:var name="mt_url"$>?__mode=search_replace" title="<__trans phrase="Search &amp; Replace">"><__trans phrase="Search &amp; Replace"></a></li>
         <li><a href="<$mt:var name="mt_url"$>?__mode=cfg_system_general" title="<__trans phrase="General Settings">"><__trans phrase="General Settings"></a></li>
         <li><a href="<$mt:var name="mt_url"$>?__mode=list&amp;_type=website&amp;blog_id=0" title="<__trans phrase="Manage Website">"><__trans phrase="Manage Website"></a></li>
